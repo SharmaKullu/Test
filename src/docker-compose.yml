@@ -1,0 +1,21 @@
+version: '2.1'
+services:
+  xibolinuxapp:
+    build:
+      context: ./src
+    container_name: testcppapp
+    environment:
+        - URL=
+        - KEY=
+        - INTERVAL=
+        - DISPLAY_ID=
+    volumes:
+        - testcppapp-data:/app
+
+volumes:
+    testcppapp-data: {}
+
+
+
+
+
